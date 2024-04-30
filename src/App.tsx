@@ -1,6 +1,7 @@
 import Hangman from "./components/Hangman";
 import Welcome from "./components/Welcome";
 
+
 // Define an interface for the word lists
 interface WordList {
   words: string[];
