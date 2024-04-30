@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "../css/main.css";
 
 interface HangmanProps {
   words: string[];
