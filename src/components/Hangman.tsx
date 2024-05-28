@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import "../css/main.css";
 
 interface HangmanProps {
@@ -37,7 +37,7 @@ const Hangman = ({ hint, words }: HangmanProps) => {
   const [errorCount, setErrorCount] = useState(0);
   const [gameStarted, setGameStarted] = useState<boolean>(false);
 
-  const displayWord = selectedWord.split('').map((letter, index) => {
+  const displayWord = selectedWord.split('').map((letter) => {
     if (guessedLetters.includes(letter)) {
       return letter;
     } else {
